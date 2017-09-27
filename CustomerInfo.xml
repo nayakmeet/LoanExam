@@ -1,0 +1,56 @@
+<CustomersInfo> <!-- ROOT ELEMENT -->
+
+	<Customer> <!-- Child ELEMENT -->
+		
+		<!-- Grand Child Element -->
+		<ApplicationId>1001</ApplicationId>
+		<Name>Priya</Name>
+		<MobileNumber>9982212345</MobileNumber>
+		<Email>priya@capgemini.com</Email>
+		<LoanProgramId>1</LoanProgramId>
+	</Customer>
+	
+	<Customer> <!-- Child ELEMENT -->
+		
+		<!-- Grand Child Element -->
+		<ApplicationId>1002</ApplicationId>
+		<Name>Anu</Name>
+		<MobileNumber>9982254321</MobileNumber>
+		<Email>anu@capgemini.com</Email>
+		<LoanProgramId>1</LoanProgramId>
+	</Customer>
+	
+	<Customer> <!-- Child ELEMENT -->
+		
+		<!-- Grand Child Element -->
+		<ApplicationId>1003</ApplicationId>
+		<Name>Arun</Name>
+		<MobileNumber>9982287335</MobileNumber>
+		<Email>arun@capgemini.com</Email>
+		<LoanProgramId>1</LoanProgramId>
+	</Customer>
+	
+	
+	<Customer> <!-- Child ELEMENT -->
+		
+		<!-- Grand Child Element -->
+		<ApplicationId>1004</ApplicationId>
+		<Name>Shyam</Name>
+		<MobileNumber>9999912345</MobileNumber>
+		<Email>shyam@capgemini.com</Email>
+		<LoanProgramId>2</LoanProgramId>
+	</Customer>
+	
+	
+	<Customer> <!-- Child ELEMENT -->
+		
+		<!-- Grand Child Element -->
+		<ApplicationId>1005</ApplicationId>
+		<Name>Priyank</Name>
+		<MobileNumber>9982233123</MobileNumber>
+		<Email>priyank@capgemini.com</Email>
+		<LoanProgramId>2</LoanProgramId>
+	</Customer>
+	
+	
+</CustomersInfo>

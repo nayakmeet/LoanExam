@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="CustomersInfo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Customer" type="CustomerType" minOccurs = "0" maxOccurs="10" />
+			</xs:sequence>
+		</xs:complexType>
+</xs:element>
+
+<xs:complexType name="CustomerType">
+		<xs:sequence>
+			<xs:element ref = "ApplicationId"/>
+			<xs:element ref = "Name"/>
+			<xs:element ref = "MobileNumber"/>
+			<xs:element ref = "Email"/>
+			<xs:element ref = "LoanProgramId"/>
+		</xs:sequence>
+</xs:complexType>
+
+<!-- ApplicationId must have four digit Id -->
+
+<xs:element name="ApplicationId">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:pattern value = "[0-9]{4}"/>
+			</xs:restriction>
+		</xs:simpleType>
+</xs:element>	
+
+
+<!-- Name must have minimum 3 and maximum 30 length of alphabets -->
+
+<xs:element name="Name">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value = "[a-zA-Z]{3,30}" />
+			</xs:restriction>
+		</xs:simpleType>
+</xs:element>
+
+
+<!-- MobileNumber must have 10 digit  -->	
+
+<xs:element name="MobileNumber">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:pattern value = "[0-9]{10}"/>
+			</xs:restriction>
+		</xs:simpleType>
+</xs:element>	
+
+
+<!-- Email must have valid email format-->
+ 
+ <xs:element name="Email">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value = "[^@]+@[^\.]+\..+"/> 
+			</xs:restriction>
+		</xs:simpleType>
+</xs:element>
+
+
+<!-- LoanProgramId must have 1 and 2 only-->
+
+<xs:element name="LoanProgramId">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:enumeration value="1"/>
+				<xs:enumeration value="2"/>
+			</xs:restriction>
+		</xs:simpleType>
+</xs:element>
+
+</xs:schema>
