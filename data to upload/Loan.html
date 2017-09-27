@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link href="css/Loan.css" rel="stylesheet"/>
+	<script src="script/Loan.js"></script>
+	
+	<title>Loan Application Form</title>
+	</head>
+	<body>
+	<form>
+		<table align="center" cellpadding="5" cellspacing="5">
+		<tr>
+			<td colspan="2">
+			<h1>Loan Application Form</h1>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Do you have a loan already?</td>
+			<td>
+				<input  type="radio" id="btnYes" name="rbt" value="Yes"/> Yes
+				<input  type="radio" id="btnNo" name="rbt" value="No" />No
+				
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Customer Name :</td>
+			<td>
+				<input type="text" id="txtName" name="txtName"  placeholder="Enter name" pattern="[A-Za-z]{4,}" required maxlength="20"/>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Mobile Number :</td>
+			<td>
+				<input type="text" name="txtMob" id="txtMob" maxlength="10" placeholder="Enter mobile number" pattern="[7-9][0-9]{9}" required/> 
+			</td>
+		</tr>
+		
+		
+		<tr>
+			<td>EmailId :</td>
+			<td>
+				<input type="email" name="txtMail" id="txtMail" placeholder="Enter Email address" maxlength="40" size="40" required/>
+			</td>
+		</tr>
+		
+		
+		<tr>
+			<td>Proof of Identity :</td>
+			<td>
+				<input type="checkbox" name="idProof" value="PAN CARD">PAN CARD
+				<input type="checkbox" name="idProof" value="Voters Id">Voters Id </br>
+				<input type="checkbox" name="idProof" value="Passport">Passport
+				<input type="checkbox" name="idProof" value="Driving License">Driving License
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Loan Amount</td>
+			<!-- <td> -->
+				<!-- <select name="LoanAmnt" id = "loandetails" required> -->
+				<!-- <option value="0">loan amount</option> -->
+				<!-- <option value="1">50000 to 100000</option> -->
+				<!-- <option value="5">100001 to 200000</option> -->
+				<!-- <option value="10">200001 to 300000</option> -->
+				<!-- </select> -->
+			<!-- </td> -->
+			
+			<td>
+				<select name="LoanAmnt" id = "loandetails" required>
+				<option>loan amount</option>
+				<option>50000 to 100000</option>
+				<option>100001 to 200000</option>
+				<option>200001 to 300000</option>
+				</select>
+			</td>
+		</tr>
+		
+		<td></td>
+		<td>
+			<input class="btn" type="submit" value="ApplyLoan" onclick="display(this.form)">
+			<input class="btn" type="reset" value="Reset">
+		</td>
+		</tr>
+		</table>
+	</form>
+	</body>
+</html>

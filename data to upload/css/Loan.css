@@ -1,0 +1,14 @@
+.btn
+		{
+			color:black;
+			background-color:grey;
+		}
+		h1{
+			font-family:Arial;
+			color:black;
+			text-align: center;
+		}
+		table{
+		    font-family:Arial;
+			border: 2px solid black;
+			}
